@@ -11,7 +11,7 @@ import Mongo from '../Assets/mongo.png';
 
 export const Skills = () => {
    return (
-      <div name='skills' className='w-full h-screen  bg-slate-400  text-black'>
+      <div name='skills' className='w-full h-screen  bg-white  text-black'>
          {/* Container */}
          <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
             <div>
@@ -20,8 +20,8 @@ export const Skills = () => {
             </div>
 
             <div className='w-full grid bg-cyan-900 grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8'>
-               <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                  <img className='w-20 mx-auto' src={HTML} alt="HTML icon" />
+               <div className='shadow-md  shadow-[#040c16] hover:scale-110 duration-500'>
+                  <img className='w-20 justify-center mx-auto' src={HTML} alt="HTML icon" />
                   <p className='my-4'>HTML</p>
                </div>
                <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>

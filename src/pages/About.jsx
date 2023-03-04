@@ -1,8 +1,10 @@
 import React from 'react'
-
+import dev from '../Assets/dev.jpg'
 export const About = () => {
    return (
-      <div name='about' className='w-full h-screen bg-cyan-900 text-white shadow-lg shadow-cyan-50'>
+      <div name='about' className='w-full h-screen justify-between flex items-center bg-cyan-900 text-white shadow-lg shadow-cyan-50'>
+         <img src={dev} className='w-[33rem] h-[30rem] justify-center rounded-tr-extraLarge
+          rounded-bl-extraLarge '></img>
          <div className='flex flex-col justify-center items-center w-full h-full'>
             <div className='max-w-[1000px] w-full grid grid-cols-2 gap-8'>
                <div className='sm:text-right pb-8 pl-4'>
@@ -10,7 +12,7 @@ export const About = () => {
                      About
                   </p>
                </div>
-               <div></div>
+
             </div>
             <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
                <div className='sm:text-center text-4xl font-bold'>

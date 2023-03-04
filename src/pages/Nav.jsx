@@ -9,8 +9,12 @@ import { EmailJSResponseStatus } from 'emailjs-com'
 export const Nav = () => {
    const [nav, setNav] = useState(false);
    const handleClick = () => setNav(!nav);
+   const [git, setGit] = useState();
+   const gitClick = () => {
+
+   }
    return (
-      <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-cyan-900 text-white ' >
+      <div className='fixed  shadow-md shadow-white w-full h-[80px] flex justify-between items-center px-4 bg-cyan-900 text-white ' >
          <div>
             <img src={logo} alt="logo image" style={{ width: '50px' }} />
          </div>
@@ -53,7 +57,7 @@ export const Nav = () => {
             <ul >
                <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300  bg-cyan-900 '>
                   <a className='flex justify-between items-center w-full  text-white  '
-                     href="/">
+                     href="http://linkedin.com/in/zafaah-haaji">
                      linkedIn <FaLinkedin size={30} />
                   </a>
                </li>
@@ -64,8 +68,8 @@ export const Nav = () => {
 
             <ul >
                <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-cyan-900 '>
-                  <a className='flex justify-between items-center w-full text-white '
-                     href="/https://github.com/Zafaah">
+                  <a onClick={gitClick} className='flex justify-between items-center w-full text-white '
+                     href="https://github.com/Zafaah">
                      GitHub<BsGithub size={30} />
                   </a>
                </li>
@@ -74,10 +78,10 @@ export const Nav = () => {
          </div>
          <div className='flex fixed top-[45%] left-0'>
             <ul >
-               <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300  bg-cyan-900 '>
+               <li className='  w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300  bg-cyan-900 '>
                   <a className='flex justify-between items-center w-full  text-white '
-                     href="/">
-                     Email<HiOutlineMail size={30} />
+                     href="https://hafzaabdulkhadir@gmail.com/send">
+                     Email <HiOutlineMail size={30} />
                   </a>
                </li>
 
